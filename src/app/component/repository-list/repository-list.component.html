@@ -6,7 +6,7 @@
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Search list" formControlName="query" autofocus>
           <div class="input-group-append">
-            <span class="input-group-text" id="basic-addon2">Search</span>
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
           </div>
         </div>
       </div>
@@ -54,6 +54,7 @@
   <div class="col-12">
     <pagination 
       class="justify-content-center mt-3" 
+      [boundaryLinks]="true"
       [(ngModel)]="paging.currentPage" 
       [totalItems]="paging.totalItems" 
       [maxSize]="paging.maxSize" 
