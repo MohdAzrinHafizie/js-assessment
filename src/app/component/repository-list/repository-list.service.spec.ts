@@ -1,11 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { RepositoryListService } from './repository-list.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('RepositoryListService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [RepositoryListService]
+      providers: [RepositoryListService],
+      imports: [
+        HttpClientModule
+      ]
     });
   });
 
