@@ -49,6 +49,8 @@ export class RepositoryListComponent implements OnInit {
           this.searching.unsubscribe();
           this.searchQuery(value);
         }
+      } else {
+        this.searchQuery(query);
       }
     });
 
